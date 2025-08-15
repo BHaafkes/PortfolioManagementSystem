@@ -23,3 +23,7 @@ steps:
 # Store the image in Artifact Registry
 images:
 - 'europe-west4-docker.pkg.dev/$PROJECT_ID/triodos-repo/triodos-ingestor:$COMMIT_SHA'
+
+# Add this entire block to the end of your cloudbuild.yaml file
+options:
+  logging: CLOUD_LOGGING_ONLY
